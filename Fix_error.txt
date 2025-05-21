@@ -1,0 +1,2 @@
+1. transaction-table.jsx --> 120
+2. 
