@@ -11,7 +11,7 @@
 !.yarn/versions
 
 #custom file
-Fix_error.txt
+/Fix_error.txt
 
 # testing
 /coverage
