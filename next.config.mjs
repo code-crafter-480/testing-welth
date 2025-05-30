@@ -1,7 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
     images: {
-        domains: ["randomuser.me"], // ✅ Add allowed external image domains
+        // domains: ["randomuser.me"], // ✅ Add allowed external image domains
         // remotePatterns: [
         //     {
         //       protocol: "https",
