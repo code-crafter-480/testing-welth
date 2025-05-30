@@ -140,6 +140,7 @@ const TransactionTable = ({ transactions }) => {
         }
 
         deleteFn(selectedIds)
+        setSelectedIds([])     // 📌 Problem-2-Solved
 
     }
 
@@ -232,8 +233,10 @@ const TransactionTable = ({ transactions }) => {
                             <TableHead className="w-[50px]">
                                 <Checkbox
                                     onCheckedChange={handleSelectAll}
-                                    checked={selectedIds.length === paginatedTransactions.length && paginatedTransactions.length > 0 }
-                                />
+                                    // 📌 Problem-3-Solved
+                                    checked={filteredAndSortedTransactions.length > 0 &&
+                                                selectedIds.length === filteredAndSortedTransactions.length}
+                                            />
                             </TableHead>
                             <TableHead className="cursor-pointer"
                                 onClick={() => handleSort("date")  }

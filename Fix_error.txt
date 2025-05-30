@@ -1,2 +1,14 @@
 1. transaction-table.jsx --> 120
 2. 
+
+Problems: 
+1. Create transaction korle create hocchilo na... (Solved)
+2. bulk transaction delete korar por 'Delete Selected {}' ata ja66ilo na... (Solved) 
+3. all transactions select korle top parent checkbox check hocche na...(Solved)
+4. Removing arcjet from --> actions/dashboard.js, actions/transaction.js, lib/arcjet.js, middleware.js --> for simplicity
+5. Removed some portion in 'revalidatePath' from 'actions/transaction.js'...
+6. (Route '/transaction/create' couldn't be rendered statically because it used headers.
+   Route '/dashboard' couldn't be rendered statically because it used headers.
+   Route '/_not-found' couldn't be rendered statically because it used headers.
+   Route '/' couldn't be rendered statically because it used headers.)
+   ➡️ Add ' export const dynamic = 'force-dynamic'; ' on the top of each code...

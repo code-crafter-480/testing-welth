@@ -1,8 +1,8 @@
 'use server'
 
-import aj from "@/lib/arcjet";
+// import aj from "@/lib/arcjet";
 import { db } from "@/lib/prisma";
-import { request } from "@arcjet/next";
+// import { request } from "@arcjet/next";
 import { auth } from "@clerk/nextjs/server";
 import { revalidatePath } from "next/cache";
 
@@ -26,7 +26,7 @@ export async function createAccount(data) {
     try {
         const { userId } = await auth()
         if (!userId) throw new Error("Unauthorized")
-
+/*
         // Get request data for ArcJet
         const req = await request();
     
@@ -52,7 +52,7 @@ export async function createAccount(data) {
     
         throw new Error("Request blocked");
         }
-
+*/
         const user = await db.user.findUnique({
             where : {
                 clerkUserId: userId 
