@@ -209,7 +209,7 @@ const TransactionTable = ({ transactions }) => {
                             <div className='flex items-center gap-2'>
                                 <Button variant="destructive" size="sm" onClick={handleBulkDelete}>
                                     <Trash className='h-4 w-4 mr-2' />
-                                    Delete Selected ({selectedIds.length})
+                                    ( {selectedIds.length} )
                                 </Button>
                             </div>
                         )

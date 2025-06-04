@@ -23,7 +23,8 @@ const Header = async() => {
                 alt='TrexFi logo'
                 width={80}
                 height={200}
-                className='h-12 w-auto object-contain'
+                className="h-8 w-auto object-contain md:h-12"
+                sizes="(max-width: 767px) 40px, 80px" // It is only for optimization...
                  />
             </Link>
 
